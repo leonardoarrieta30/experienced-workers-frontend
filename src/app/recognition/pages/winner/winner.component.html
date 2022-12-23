@@ -1,0 +1,31 @@
+<div class="winner">
+  <div class="anuncio">
+    <h1>Felicidades trabajador honesto y responsable a sido elegido como el trabajador del año</h1>
+  </div>
+
+<div class="card">
+    <mat-card class="example-card" style="border: 13px solid #02714D; box-shadow: 14px 14px 13px 0 black;">
+        <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title [ngStyle]="{color:'green'}">{{theBestWorkerLikes.name}}</mat-card-title>
+        <mat-card-subtitle [ngStyle]="{color:'green'}">{{theBestWorkerLikes.lastname}}</mat-card-subtitle>
+        <div class="example-spacer"></div>
+      </mat-card-header>
+      <img mat-card-image src="{{theBestWorkerLikes.urlToImage}}" style="max-width: 350px" alt="People are workers">
+      <mat-card-content >
+        <h2>Work Position: {{theBestWorkerLikes.workPosition}}</h2>
+        <h4>
+          {{theBestWorkerLikes.description}}
+        </h4>
+        <h4>Age: {{theBestWorkerLikes.age}}</h4>
+        <h4>Gender: {{theBestWorkerLikes.gender}}</h4>
+
+      </mat-card-content>
+      <mat-card-actions>
+      </mat-card-actions>
+      <h2>Likes: {{theBestWorkerLikes.likes}}</h2>
+    </mat-card>
+</div>
+
+
+</div>

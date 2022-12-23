@@ -1,0 +1,42 @@
+<!--<div class="form">-->
+<!--  <h1>Register new Worker</h1>-->
+<!--  <h2>{{ isEditMode ? 'Edit Worker' : 'Worker' }}</h2>-->
+<!--  <form (submit)="onSubmit()" #workerForm='ngForm'>-->
+<!--    <mat-form-field>-->
+<!--      <input matInput placeholder="Name" name="name" required [(ngModel)]="WorkerData.name">-->
+<!--    </mat-form-field>-->
+<!--    <mat-form-field>-->
+<!--      <input matInput placeholder="Lastname" name="lastname" required [(ngModel)]="WorkerData.lastname">-->
+<!--    </mat-form-field>-->
+<!--    <mat-form-field>-->
+<!--      <input matInput placeholder="Work Position" name="workPosition" required [(ngModel)]="WorkerData.workPosition">-->
+<!--    </mat-form-field>-->
+<!--    <mat-form-field>-->
+<!--      <input matInput placeholder="Url To Image" name="urlToImage" required [(ngModel)]="WorkerData.urlToImage">-->
+<!--    </mat-form-field>-->
+<!--    <mat-form-field>-->
+<!--      <input matInput placeholder="Description" name="description" required [(ngModel)]="WorkerData.description">-->
+<!--    </mat-form-field>-->
+<!--    <mat-form-field>-->
+<!--      <input type="number" matInput placeholder="Age" name="age" required [(ngModel)]="WorkerData.age">-->
+<!--    </mat-form-field>-->
+<!--    <ng-container *ngIf="isEditMode; else elseTemplate">-->
+<!--      <button mat-button color="primary">Update</button>-->
+<!--      <button mat-button color="warn" (click)="cancelEdit()">Cancel</button>-->
+<!--    </ng-container>-->
+<!--    <ng-template #elseTemplate>-->
+<!--      <button mat-button color="primary">Add</button>-->
+<!--    </ng-template>-->
+<!--  </form>-->
+
+<!--</div>-->
+
+
+<h1 mat-dialog-title>Delete file</h1>
+<div mat-dialog-content>
+  Would you like to delete cat.jpeg?
+</div>
+<div mat-dialog-actions>
+  <button mat-button mat-dialog-close>No</button>
+  <button mat-button mat-dialog-close cdkFocusInitial>Ok</button>
+</div>

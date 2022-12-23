@@ -1,0 +1,30 @@
+<!--<form [formGroup]="form" (ngSubmit)="onSubmit()">-->
+<!--  <label>-->
+<!--    Nombre de usuario:-->
+<!--    <input type="text" formControlName="username" required [(ngModel)]="userData.email">-->
+<!--  </label>-->
+<!--  <br>-->
+<!--  <label>-->
+<!--    Contraseña:-->
+<!--    <input type="password" formControlName="password" required [(ngModel)]="userData.password">-->
+<!--  </label>-->
+<!--  <br>-->
+<!--  <button type="submit" [disabled]="form.invalid">Registrarse</button>-->
+<!--</form>-->
+
+<form class="content2" #formTemplate='ngForm'>
+  <h1> Complete your data: </h1>
+  <mat-form-field appearance="fill">
+    <mat-label>Name</mat-label>
+    <input matInput name="name" type="text" [(ngModel)]="dataUser!.email" required placeholder="Name">
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Enter your password</mat-label>
+    <input matInput [type]="hide ? 'password' : 'text'" required name="password" [(ngModel)]="dataUser!.password">
+    <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+      <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+    </button>
+  </mat-form-field>
+  <button mat-button mat-raised-button color="warn" (click)="register(formTemplate)">Register</button>
+</form>

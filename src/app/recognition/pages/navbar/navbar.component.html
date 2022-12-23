@@ -1,0 +1,57 @@
+<mat-toolbar>
+
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" (click)="opened=!opened">
+    <mat-icon>menu</mat-icon>
+<!--    <ng-container *ngIf="opened; else template">-->
+
+<!--    </ng-container>-->
+<!--    <ng-template #template>-->
+
+<!--    </ng-template>-->
+
+
+  </button>
+  <span>Concyssa</span>
+  <span class="example-spacer"></span>
+  <a href="https://concyssa.pe/" target="_blank" style="text-decoration: none; color: aliceblue">Official Web site</a>
+
+</mat-toolbar>
+
+<mat-sidenav-container>
+  <mat-sidenav [(opened)]="opened" mode="side">
+    <mat-list>
+      <mat-list-item>
+        <h1 style="font-size: 20px">Filter by Gender</h1>
+      </mat-list-item>
+      <mat-list-item>
+        <button mat-button (click)="getWorkersByMale()"><mat-checkbox>Male</mat-checkbox></button>
+      </mat-list-item>
+      <mat-list-item>
+        <button mat-button (click)="getWorkersByFemale()"><mat-checkbox>Female</mat-checkbox></button>
+      </mat-list-item>
+    </mat-list>
+  </mat-sidenav>
+<app-workers></app-workers>
+</mat-sidenav-container>
+
+<!--<app-matsidenav [opened]="opened"></app-matsidenav>-->
+<!--<mat-sidenav-container>-->
+<!--  <mat-sidenav [(opened)]="opened" mode="side">-->
+<!--    <mat-list>-->
+<!--      <mat-list-item>-->
+<!--        <h1 style="font-size: 20px">Filter by Gender</h1>-->
+<!--      </mat-list-item>-->
+<!--      <mat-list-item>-->
+<!--        <mat-checkbox>Male</mat-checkbox>-->
+<!--      </mat-list-item>-->
+<!--      <mat-list-item>-->
+<!--        <mat-checkbox>Female</mat-checkbox>-->
+<!--      </mat-list-item>-->
+<!--    </mat-list>-->
+<!--  </mat-sidenav>-->
+<!--<app-workers></app-workers>-->
+<!--&lt;!&ndash;  <mat-sidenav-content>&ndash;&gt;-->
+<!--&lt;!&ndash;          end&ndash;&gt;-->
+<!--&lt;!&ndash;          <button mat-button (click)="opened=!opened">Toogle</button>&ndash;&gt;-->
+<!--&lt;!&ndash;  </mat-sidenav-content>&ndash;&gt;-->
+<!--</mat-sidenav-container>-->

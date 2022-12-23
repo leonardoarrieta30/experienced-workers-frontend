@@ -1,0 +1,30 @@
+.anuncio{
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+  justify-content: center;
+  align-items: center;
+
+  /*text-align: center;*/
+  /*margin: auto 30px;*/
+}
+.example-card {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+}
+.example-spacer{
+  margin-bottom: 40px;
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+
+/*mat-card{*/
+/*  position: absolute;*/
+/*  top: 50%;*/
+/*  left: 50%;*/
+/*  transform: translate(-50%, -50%);*/
+/*}*/
