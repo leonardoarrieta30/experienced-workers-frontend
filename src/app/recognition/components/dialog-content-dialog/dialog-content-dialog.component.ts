@@ -6,11 +6,11 @@ import {MatDialog, MatDialogRef} from "@angular/material/dialog";
 import * as _ from 'lodash';
 
 @Component({
-  selector: 'app-dialog-content-example-dialog',
-  templateUrl: './dialog-content-example-dialog.component.html',
-  styleUrls: ['./dialog-content-example-dialog.component.css']
+  selector: 'app-dialog-content-dialog',
+  templateUrl: './dialog-content-dialog.component.html',
+  styleUrls: ['./dialog-content-dialog.component.css']
 })
-export class DialogContentExampleDialogComponent {
+export class DialogContentDialogComponent {
   WorkerData: Worker;
 
   data: any;
@@ -21,7 +21,7 @@ export class DialogContentExampleDialogComponent {
   WorkerForm!: NgForm;
 
 
-  constructor(private workersService: WorkersService,public dialogRef: MatDialogRef<DialogContentExampleDialogComponent>) {
+  constructor(private workersService: WorkersService,public dialogRef: MatDialogRef<DialogContentDialogComponent>) {
     this.WorkerData = {} as Worker;
   }
 

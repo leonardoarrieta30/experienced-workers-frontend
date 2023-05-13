@@ -8,8 +8,8 @@ import { compare } from 'fast-json-patch';
 import {ArrayDataSource} from "@angular/cdk/collections";
 import {MatDialog, MatDialogRef} from "@angular/material/dialog";
 import {
-  DialogContentExampleDialogComponent
-} from "../../components/dialog-content-example-dialog/dialog-content-example-dialog.component";
+  DialogContentDialogComponent
+} from "../../components/dialog-content-dialog/dialog-content-dialog.component";
 import {sum} from "lodash";
 import {Router} from "@angular/router";
 
@@ -47,14 +47,14 @@ export class WorkersComponent implements OnInit{
   }
 
   openDialog() {
-    const dialogRef = this.dialog.open(DialogContentExampleDialogComponent);
+    const dialogRef = this.dialog.open(DialogContentDialogComponent);
     dialogRef.afterClosed().subscribe(result => {
       console.log(`Dialog result: ${result}`);
     });
   }
 
   openDialogDelete(enterAnimationDuration: string, exitAnimationDuration: string, id: number): void {
-    this.dialog.open(DialogContentExampleDialogComponent, {
+    this.dialog.open(DialogContentDialogComponent, {
       width: '250px',
       enterAnimationDuration,
       exitAnimationDuration,

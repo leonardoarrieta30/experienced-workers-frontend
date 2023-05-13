@@ -15,7 +15,7 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {MatSidenavModule} from "@angular/material/sidenav";
 import {MatListModule} from "@angular/material/list";
 import { NavbarComponent } from './recognition/pages/navbar/navbar.component';
-import { DialogContentExampleDialogComponent } from './recognition/components/dialog-content-example-dialog/dialog-content-example-dialog.component';
+import { DialogContentDialogComponent } from './recognition/components/dialog-content-dialog/dialog-content-dialog.component';
 import {MatDialogModule} from "@angular/material/dialog";
 import {MatCheckboxModule} from "@angular/material/checkbox";
 import { MatsidenavComponent } from './recognition/components/matsidenav/matsidenav.component';
@@ -31,7 +31,7 @@ import {RegisterUserComponent} from "./recognition/public/security/register-user
     AppComponent,
     WorkersComponent,
     NavbarComponent,
-    DialogContentExampleDialogComponent,
+    DialogContentDialogComponent,
     MatsidenavComponent,
     WorkersByGenderComponent,
     WinnerComponent,
