@@ -30,7 +30,7 @@ export class WorkersComponent implements OnInit{
   worker: Worker | undefined;
 
 
-  displayedColumns: string[] = ['id', 'name', 'lastname', 'workPosition', 'urlToImage', 'description', 'likes', 'age', 'Actions'];
+  // displayedColumns: string[] = ['id', 'name', 'lastname', 'workPosition', 'urlToImage', 'description', 'likes', 'age', 'Actions'];
   isEditMode = false;
 
 
@@ -43,6 +43,7 @@ export class WorkersComponent implements OnInit{
 
   constructor(private workersService: WorkersService, public dialog: MatDialog, private router: Router) {
     this.WorkerData = {} as Worker;
+    // this.WorkerData.likes = 0;
   }
 
   openDialog() {
@@ -218,7 +219,7 @@ export class WorkersComponent implements OnInit{
 
   executed = false;
 
-  @HostListener('click')
+  // @HostListener('click')
    updateWorkerLike(element: Worker){
     if (!this.executed) {
       if (element.likes < 10) {
