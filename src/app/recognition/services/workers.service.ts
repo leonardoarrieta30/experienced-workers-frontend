@@ -15,6 +15,7 @@ export class WorkersService {
       'Content-Type':'application/json',
     })
   };
+
   constructor(private http: HttpClient) { }
 
   handleError(error: HttpErrorResponse){

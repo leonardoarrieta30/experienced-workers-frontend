@@ -1,7 +1,8 @@
 {
   "/api/v1/*":{
-    "target": "http://localhost:8080",
+    "target": "https://experienced-workerstwo-production.up.railway.app",
     "secure": false,
-    "logLevel": "debug"
+    "logLevel": "debug",
+    "changeOrigin": true
   }
 }

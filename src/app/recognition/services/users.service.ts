@@ -7,7 +7,7 @@ import {User} from "../model/user";
   providedIn: 'root'
 })
 export class UsersService {
-  basePath = '/api/v1/users';
+  basePath = 'https://experienced-workerstwo-production.up.railway.app/api/v1/users';
   httpOptions = {
     headers: new HttpHeaders({
       'Content-Type':'application/json',
